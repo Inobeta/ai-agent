@@ -1,0 +1,43 @@
+{
+  "name": "inobeta-ai-agent",
+  "version": "0.0.1",
+  "description": "TypeScript framework for building AI agents in business applications. Template Method pattern with pluggable model drivers (Claude, OpenAI).",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "example:task-priority": "tsx examples/task-priority-agent.ts",
+    "prepublishOnly": "npm run clean && npm run build",
+    "major": "npm version --no-git-tag-version major",
+    "minor": "npm version --no-git-tag-version minor",
+    "patch": "npm version --no-git-tag-version patch",
+    "publish": "npm publish --access public"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.0",
+    "knex": "^2.3.0",
+    "rimraf": "^6.1.3",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "knex": "^2.3.0"
+  },
+  "engines": {
+    "node": ">=24.8.0"
+  }
+}
