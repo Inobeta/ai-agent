@@ -1,5 +1,5 @@
 {
-  "name": "inobeta-ai-agent",
+  "name": "@inobeta/ai-agent",
   "version": "0.0.1",
   "description": "TypeScript framework for building AI agents in business applications. Template Method pattern with pluggable model drivers (Claude, OpenAI).",
   "license": "MIT",
