@@ -12,7 +12,7 @@ This folder contains a minimal custom agent example based on the library runtime
 
 ## Run
 
-1. Apply schema: `src/ai-agent/schema.sql` to your PostgreSQL database.
+1. Apply schema: `schema.sql` to your PostgreSQL database.
 2. Set `DATABASE_URL`.
 3. Build the library:
 
